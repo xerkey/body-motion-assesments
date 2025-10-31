@@ -89,6 +89,23 @@ function App() {
       {error && (
         <div className="error">
           <strong>エラー:</strong> {error}
+          <div style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
+            <strong>ヒント:</strong>
+            <ul style={{ textAlign: 'left', marginTop: '0.5rem' }}>
+              <li>動画に人物の全身が映っていることを確認してください</li>
+              <li>動画の解像度が十分高いことを確認してください</li>
+              <li>動画ファイルが破損していないか確認してください</li>
+              <li>別の動画で試してみてください</li>
+              <li>ブラウザのコンソールでより詳細なエラーを確認できます（F12キー）</li>
+            </ul>
+          </div>
+          <button
+            onClick={() => setError('')}
+            className="upload-button"
+            style={{ marginTop: '1rem' }}
+          >
+            エラーを閉じる
+          </button>
         </div>
       )}
 
