@@ -1,0 +1,164 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 2px dashed #646cff;
+  border-radius: 12px;
+  background-color: rgba(100, 108, 255, 0.05);
+}
+
+.upload-button {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #535bf2;
+}
+
+.upload-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.video-section {
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.video-player {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.analysis-section {
+  margin-top: 2rem;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #646cff;
+  margin: 2rem 0;
+}
+
+.results {
+  text-align: left;
+  padding: 2rem;
+  background-color: rgba(100, 108, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.results h2 {
+  color: #646cff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.score-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.score-card h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #646cff;
+  margin-bottom: 0.5rem;
+}
+
+.score-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+.detail-item strong {
+  display: block;
+  color: #646cff;
+  margin-bottom: 0.5rem;
+}
+
+.feedback {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  border-left: 4px solid #646cff;
+}
+
+.feedback h4 {
+  color: #646cff;
+  margin-bottom: 0.5rem;
+}
+
+.feedback ul {
+  list-style-position: inside;
+  text-align: left;
+}
+
+.feedback li {
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #ff4444;
+  padding: 1rem;
+  background-color: rgba(255, 68, 68, 0.1);
+  border-radius: 6px;
+  margin: 1rem 0;
+}
